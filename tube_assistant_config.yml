@@ -1,0 +1,13 @@
+general:   
+   gpt_engine: "davinci"
+   gpt_temperature: 0.5
+   gpt_max_tokens: 100
+   gpt_key: <gpt key>
+   interactive: False # True if input being taken from the user on the command line; False if input coming from test file
+prompts:
+   welcome_prompt: "Welcome to Underground Assistant"
+   input_prompt: "what trip do you want to take?"
+   stop_string: bye
+files:
+   example_file: 'tfl_prompts.csv'
+   test_file: 'tfl_tests.csv'
