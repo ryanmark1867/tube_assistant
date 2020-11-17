@@ -2,7 +2,7 @@ general:
    gpt_engine: "davinci"
    gpt_temperature: 0.5
    gpt_max_tokens: 100
-   gpt_key: 'sk-GjgMWuRMTBiVHYJznx7RSY7Rq8rGTYjRtuAEER5f'
+   gpt_key: <gpt key>
    interactive: False # True if input being taken from the user on the command line; False if input coming from test file
 prompts:
    welcome_prompt: "Welcome to Underground Assistant"
