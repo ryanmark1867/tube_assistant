@@ -84,7 +84,7 @@ def get_gpt(gpt_key, gpt_engine,gpt_temperature,gpt_max_tokens,example_file):
         path = get_path()
         example_df = pd.read_csv(os.path.join(path,example_file))
         for index, row in example_df.iterrows():
-            print(row['question'],row['answer'])
+            # print(row['question'],row['answer'])
             gpt.add_example(Example(row['question'],row['answer']))
     except Exception as error:
         print('ERROR', error)
@@ -104,6 +104,8 @@ def main():
     
     # ingest config file
     config = get_config('tube_assistant_config.yml')
+    print("example_file is: ",config['files']['example_file'])
+    print("test_file is: ",config['files']['test_file'])
     print(config['prompts']['welcome_prompt'])
     # initialize GPT-3 env
     gpt = get_gpt(config['general']['gpt_key'], 
@@ -123,7 +125,8 @@ def main():
         # read input from test file
         test_df = pd.read_csv(os.path.join(get_path(),config['files']['test_file']))
         for index, row in test_df.iterrows():
-            print(row['question']," expected: ",row['expected answer'])
+            print(row['question'])
+            print("expect:",row['expected answer'])
             output = gpt.submit_request(row['question'])
             print(output.choices[0].text)
     
