@@ -10,4 +10,4 @@ prompts:
    stop_string: bye
 files:
    example_file: 'tfl_prompts_hops_separated_and_segmented.csv'
-   test_file: 'tfl_tests_one_lines.csv'
+   test_file: 'tfl_tests.csv'
