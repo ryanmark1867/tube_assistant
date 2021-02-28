@@ -12,4 +12,6 @@ Harness to exercise simple GPT-3 applications.
 
 More background:
 - article: https://towardsdatascience.com/on-the-tube-with-gpt-3-6f9572e88292
-- videos: https://www.youtube.com/watch?v=790PiTSqi4Y https://youtu.be/Xzb1Vc8dYAY
+- videos: 
+- London: https://youtu.be/790PiTSqi4Y 
+- NYC: https://youtu.be/Xzb1Vc8dYAY
