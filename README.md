@@ -12,4 +12,4 @@ Harness to exercise simple GPT-3 applications.
 
 More background:
 - article: https://towardsdatascience.com/on-the-tube-with-gpt-3-6f9572e88292
-- video: https://www.youtube.com/watch?v=790PiTSqi4Y
+- videos: https://www.youtube.com/watch?v=790PiTSqi4Y https://youtu.be/Xzb1Vc8dYAY
